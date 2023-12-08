@@ -22,6 +22,6 @@ jobs:
       - run: ls
       - run: git log
       - run: echo "www.mkg.company" > build/web/CNAME
-      - git add CNAME
-      - git commit -m "Included CNAME"
-      - git push origin HEAD:gh-pages --force
+      - run: git add CNAME
+      - run: git commit -m "Included CNAME"
+      - run: git push origin HEAD:gh-pages --force
