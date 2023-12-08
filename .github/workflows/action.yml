@@ -14,9 +14,14 @@ jobs:
         with:
           channel: beta
       - run: flutter pub get
-      - run: pwd
-      - run: ls
-      - run: echo "www.mkg.company" > build/web/CNAME
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           basehref: /
+      - run: git status
+      - run: pwd
+      - run: ls
+      - run: git log
+      - run: echo "www.mkg.company" > build/web/CNAME
+      - git add CNAME
+      - git commit -m "Included CNAME"
+      - git push origin HEAD:gh-pages --force
