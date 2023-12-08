@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'MKG Company - Software Stores',
       home: Scaffold(
         backgroundColor: Colors.amber.shade200,
         body: SafeArea(
