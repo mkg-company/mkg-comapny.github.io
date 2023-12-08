@@ -1,8 +1,6 @@
 name: Publish To gh-pages
 
-on:
-  push:
-    branches: [ $vars.GITHUB_REF_NAME ]
+on: [ push ]
 
 jobs:
   build:
