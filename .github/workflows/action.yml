@@ -17,14 +17,3 @@ jobs:
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           basehref: /
-      - run: git status
-      - run: git checkout gh-pages
-      - run: git status
-      - run: pwd
-      - run: ls
-      - run: git log
-      - run: echo "www.mkg.company" > CNAME
-      - run: git add .
-      - run: git log
-      - run: git commit -m "Included CNAME"
-      - run: git push origin HEAD:gh-pages --force
