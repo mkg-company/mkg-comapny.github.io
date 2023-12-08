@@ -14,9 +14,7 @@ jobs:
         with:
           channel: beta
       - run: flutter pub get
-      - run: pwd
-      - run: git status
-      - run: echo "www.mkg.company" > CNAME
+      - run: echo "www.mkg.company" > build/web/CNAME
       - run: ls
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
