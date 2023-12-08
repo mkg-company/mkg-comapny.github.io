@@ -2,7 +2,7 @@ name: Publish To gh-pages
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ ${{ github.ref_name }} ]
 
 jobs:
   build:
