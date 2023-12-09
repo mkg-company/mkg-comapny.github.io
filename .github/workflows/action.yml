@@ -1,8 +1,6 @@
 name: Publish To gh-pages
 
-on:
-  push:
-    branches: [ main ]
+on: [ push ]
 
 jobs:
   build:
@@ -17,8 +15,3 @@ jobs:
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           basehref: /
-      - run: git checkout gh-pages
-      - run: echo "www.mkg.company" > CNAME
-      - run: git add .
-      - run: git commit -m "Included CNAME"
-      - run: git push origin HEAD:gh-pages --force
