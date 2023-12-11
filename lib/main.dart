@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  radius: 150,
+                  radius: 120,
                   backgroundColor: Colors.brown.shade900,
                 ),
                 SizedBox(
@@ -33,16 +33,19 @@ class MyApp extends StatelessWidget {
                 ),
                 Text(
                   'MKG Company',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
+
                       color: Colors.brown.shade900,
-                      fontSize: 80,
+                      fontSize: 68,
                       fontWeight: FontWeight.bold),
                 ),
                 Text(
                   'Software Stores',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.brown.shade900,
-                    fontSize: 48,
+                    fontSize: 42,
                     letterSpacing: 10,
                   ),
                 ),
